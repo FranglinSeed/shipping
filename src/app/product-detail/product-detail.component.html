@@ -1,0 +1,30 @@
+<div style="margin: 70px 0px;">
+  <section class="p-2 text-center">
+    <h3>* Product Detail *</h3>
+  </section>
+  <section>
+    <div class="container">
+      <div class="pb-4" *ngIf="product">
+        <h4 class="p-1 font-weight-bolder">{{product.title}}</h4>
+        <p class="p-1">{{product.price | currency}}</p>
+        <p class="p-1">{{product.description}}</p>
+        <hr/>
+      </div>
+    </div>
+  </section>
+  <section class="p-2 text-center">
+    <h3>* Shipping Prices *</h3>
+  </section>
+  <section>
+    <div class="container">
+      <div class="pb-4" *ngFor="let shippingCost of shippingCosts | async">
+        <h4 class="p-1 font-weight-bolder">{{shippingCost.type}}</h4>
+        <p class="p-1">{{shippingCost.price | currency}}</p>
+        <hr/>
+      </div>
+    </div>
+  </section>
+  <section class="p-2 text-center">
+    <a class="btn btn-primary rounded-sm" [routerLink]="['']">Back</a>
+  </section>
+</div>

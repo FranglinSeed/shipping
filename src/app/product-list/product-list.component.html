@@ -1,4 +1,19 @@
-<p>product-list works!</p>
-<div *ngFor="let product of products">
-  <a>{{product.title}}</a>
+<div style="margin-top: 70px;">
+  <section class="p-2 text-center">
+    <h3>Product List</h3>
+  </section>
+  <section>
+    <div class="container">
+      <div class="pb-4" *ngFor="let product of products">
+        <a title="{{product.price | currency}}" [routerLink]="['products',product.id]"><h4 class="p-1 font-weight-bolder">{{product.title}}</h4></a>
+        <p>{{product.description}}</p>
+        <a class="btn btn-primary rounded-sm ml-4" (click)="onShared(product)">Buy</a>
+        <hr/>
+      </div>
+    </div>
+  </section>
+  <section class="p-2 text-center">
+    <span>* select one of the list *</span>
+  </section>
 </div>
+
