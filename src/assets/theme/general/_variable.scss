@@ -1,0 +1,29 @@
+// Colors
+$prussian-blue: #003366;
+$cerise: #E1266B;
+$denim: #1E7BD8;
+$rock-blue: #8DA3BA;
+$zircon: #DDDFE3;
+$solitude: #F2F3F5;
+
+// Theme colors
+$theme-colors: (
+  primary: $denim,
+  danger: $cerise
+);
+
+// Spacing
+$pixel-spacer: 5px !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+@for $i from 1 through 100 {
+  $spacers: map-merge($spacers, (
+    $i * 5: ($i * $pixel-spacer)
+  ));
+}
+
+// Buttons + Forms
+
+$btn-padding-y: 0.5rem;
+$btn-border-radius: 0;
+$btn-font-size: 15px;
+$btn-font-weight: bold;
