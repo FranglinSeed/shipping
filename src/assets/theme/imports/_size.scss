@@ -1,0 +1,49 @@
+@for $i from 0 through 80 {
+  .height-#{$i * 5} {
+    height: #{$i * 5}px !important;
+  }
+  .min-height-#{$i * 5} {
+    min-height: #{$i * 5}px !important;
+  }
+  .max-height-#{$i * 5} {
+    max-height: #{$i * 5}px !important;
+  }
+  .width-#{$i * 5} {
+    width: #{$i * 5}px !important;
+  }
+  .min-width-#{$i * 5} {
+    min-width: #{$i * 5}px !important;
+  }
+  .max-width-#{$i * 5} {
+    max-width: #{$i * 5}px !important;
+  }
+  .font-#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+.w-95{width:95%!important}
+.w-90{width:90%!important}
+.w-85{width:85%!important}
+.w-80{width:80%!important}
+.maxw-95{max-width:95%!important}
+.maxw-90{max-width:90%!important}
+.maxw-85{max-width:85%!important}
+.maxw-80{max-width:80%!important}
+.minw-95{min-width:95%!important}
+.minw-90{min-width:90%!important}
+.minw-85{min-width:85%!important}
+.minw-80{min-width:80%!important}
+
+.h-95{height:95%!important}
+.h-90{height:90%!important}
+.h-85{height:85%!important}
+.h-80{height:80%!important}
+.maxh-95{min-height:95%!important}
+.maxh-90{min-height:90%!important}
+.maxh-85{min-height:85%!important}
+.maxh-80{min-height:80%!important}
+.minh-95{min-height:95%!important}
+.minh-90{min-height:90%!important}
+.minh-85{min-height:85%!important}
+.minh-80{min-height:80%!important}
